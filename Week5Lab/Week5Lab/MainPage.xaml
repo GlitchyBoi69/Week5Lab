@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Week5Lab"
+             x:Class="Week5Lab.MainPage">
+
+    <Grid>
+           <!--This section is used for preset definitions like you would have in a CSS file for HTML. You can have it in columns and rows. -->
+           <Grid.RowDefinitions>
+               <!--Row 0: Auto Fit -->
+               <RowDefinition Height="Auto" />
+               <!--Row 1: Default -->
+                <RowDefinition Height="*" />
+               <!--Row 2: Set Height -->
+                <RowDefinition Height="100" />
+               <!--The order in which these appear will determine the size of the button depending on which row/column you assign it. Look to Buttons for example. -->
+               <!--You cannot however use this to assign things like colors, only specific things like height and width -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100" />
+        </Grid.ColumnDefinitions>
+        <!-- Details such as text and background color alongside what column and row the element is using. -->
+        <Button Text="Test 2" Grid.Row="0" Grid.Column="0"></Button>
+        <Button Text="Test" Grid.Row="1" Grid.Column="1"></Button>
+        <Button Text="Test 3" Grid.Row="2" Grid.Column="2"></Button>
+    </Grid>
+
+</ContentPage>
